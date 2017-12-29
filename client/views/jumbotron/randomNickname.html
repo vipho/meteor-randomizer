@@ -1,0 +1,18 @@
+<template name="randomNickname">
+	<div class="jumbotron jumbotron-fluid">
+		{{#if nickname}}
+			<div class="container text-center">
+			  <p class="lead">Случайным образом был выбран:</p>
+			  <h1 class="display-3">{{nickname}}</h1>
+			</div>
+		{{else}}
+			<div class="container text-center">
+				<p class="lead">Жду, пока все не кликнут по кнопке.</p>
+			</div>
+		{{/if}}
+	</div>
+  <p class="lead text-center">
+    <button class="btn btn-primary btn-lg">Randomize!!!11</button>
+    <div class="clearfix text-center"><small>На кнопку нажали {{count}} из {{all}}</small></div>
+  </p>
+</template>
